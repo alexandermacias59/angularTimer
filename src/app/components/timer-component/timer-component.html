@@ -1,7 +1,12 @@
-<div>
-    <span>{{title()}}</span>
-    <span>{{timeToDisplay()}}</span>
-    <button (click)="changeTimeStep(1)">secondi</button>
-    <button (click)="changeTimeStep(60)">minuti</button>
-    <button (click)="changeTimeStep(3600)">ore</button>
+<div class="time-container">
+    <div class="display-time">
+        <span>{{title()}}</span>
+        <span>{{timeToDisplay()}}</span>
+    </div>
+    <div class="btns-container">
+        <button (click)="changeTimeStep(1)">secondi</button>
+        <button (click)="changeTimeStep(60)">minuti</button>
+        <button (click)="changeTimeStep(3600)">ore</button>
+    </div>
+    
 </div>

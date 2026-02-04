@@ -1,5 +1,16 @@
-<app-clock-component [time]="timeServ.time()"></app-clock-component>
-<app-timer-component title="a domani" [seconds]="timeServ.secondsToMidnight()"></app-timer-component>
-<app-timer-component title="al weekend" [seconds]="timeServ.secondsToWeekend()"></app-timer-component>
-<app-timer-component title="al prossimo mese" [seconds]="timeServ.secondsToEndOfTheMonth()"></app-timer-component>
-<app-timer-component title="al prossimo anno" [seconds]="timeServ.secondsToEndOfTheYear()"></app-timer-component>
+<div class="father-container">
+    <div class="clock-container">
+        <app-clock-component [time]="timeServ.time()"></app-clock-component>
+    </div>
+    <div class="time-container">
+        <app-timer-component title="A domani:" [seconds]="timeServ.secondsToMidnight()"></app-timer-component>
+        <app-timer-component title="Al weekend:" [seconds]="timeServ.secondsToWeekend()"></app-timer-component>
+        <app-timer-component title="Al prossimo mese:" [seconds]="timeServ.secondsToEndOfTheMonth()"></app-timer-component>
+        <app-timer-component title="Al prossimo anno:" [seconds]="timeServ.secondsToEndOfTheYear()"></app-timer-component>
+        <app-time-gta6-component></app-time-gta6-component>
+        <app-time-birth-component></app-time-birth-component>
+    </div>
+    
+</div>
+
+    

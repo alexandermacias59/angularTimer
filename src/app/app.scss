@@ -1,0 +1,17 @@
+.father-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.clock-container{
+    display: flex;
+    justify-content: center;
+}
+.time-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
