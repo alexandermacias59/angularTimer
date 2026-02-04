@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-family: 'Courier New', Courier, monospace;
   background-color: #f0f0f0;
   padding: 20px;
@@ -10,25 +10,9 @@
   border: 1px solid #ccc;
   gap: 20px;
   width: 300px;
+  height: 100px;
 }
 .display-time {
     display: flex;
-    justify-content: center;
-}
-.btns-container{
-    display: flex;
-    gap: 10px;
-    margin: 10px;
-
-}
-.btns-container button{
-    padding: 10px 20px;
-    // border: none;
-    border-radius: 5px;
-    background-color: #fff200;
-    color: black;
-    cursor: pointer;
-}
-.btns-container button:hover{
-    background-color: #d6cd2c;
+    justify-content: space-between;
 }

@@ -10,4 +10,32 @@
   border: 1px solid #ccc;
   gap: 20px;
   width: 300px;
+  height: 100px;
+  color: black;
+}
+
+.display-time {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.btns-container {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+
+.btns-container button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #fff200;
+  color: black;
+  cursor: pointer;
+}
+
+.btns-container button:hover {
+  background-color: #d6cd2c;
 }

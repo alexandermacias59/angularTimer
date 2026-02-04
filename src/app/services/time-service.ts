@@ -6,6 +6,15 @@ import { computed, Injectable, signal, WritableSignal } from '@angular/core';
 export class TimeService {
 
   time: WritableSignal<Date> = signal(new Date());
+  timestep: WritableSignal<number> = signal(1);
+
+  timeUnit = computed(() => {
+    const step = this.timestep();
+    if (step === 1) return 'secondi';
+    if (step === 60) return 'minuti';
+    if (step === 3600) return 'ore';
+    return 'secondi';
+  });
 
   secondsToMidnight = computed(() => {
 
@@ -106,6 +115,10 @@ export class TimeService {
 
     }, 1000);
 
+  }
+
+  changeTimeStep(step: number) {
+    this.timestep.set(step);
   }
   
 }

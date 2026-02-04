@@ -4,10 +4,11 @@ import { TimerComponent } from "./components/timer-component/timer-component";
 import { TimeService } from './services/time-service';
 import { TimeBirthComponent } from "./components/time-birth-component/time-birth-component";
 import { TimeGta6Component } from "./components/time-gta6-component/time-gta6-component";
+import { ControlsComponent } from './components/controls-component/controls-component';
 
 @Component({
   selector: 'app-root',
-  imports: [ClockComponent, TimerComponent, TimeBirthComponent, TimeGta6Component],
+  imports: [ClockComponent, TimerComponent, TimeBirthComponent, TimeGta6Component, ControlsComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

@@ -1,4 +1,5 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, computed, inject, input } from '@angular/core';
+import { TimeService } from '../../services/time-service';
 
 @Component({
   selector: 'app-timer-component',
@@ -8,12 +9,13 @@ import { Component, computed, input } from '@angular/core';
 })
 export class TimerComponent {
 
+  timeService = inject(TimeService);
 
   title = input<string>()
   seconds = input.required<number>()
-  timestep = 1;
+  
   timeToDisplay = computed(() => {
-    const newTime = this.seconds() / this.timestep;
+    const newTime = this.seconds() / this.timeService.timestep();
 
     const to1decimal = Math.round(newTime * 10) / 10;
 
@@ -21,7 +23,7 @@ export class TimerComponent {
   })
 
   changeTimeStep(step: number) {
-    this.timestep = step;
+    this.timeService.changeTimeStep(step);
   }
 
 }
