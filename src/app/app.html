@@ -1,1 +1,5 @@
-<app-clock-component></app-clock-component>
+<app-clock-component [time]="timeServ.time()"></app-clock-component>
+<app-timer-component title="a domani" [seconds]="timeServ.secondsToMidnight()"></app-timer-component>
+<app-timer-component title="al weekend" [seconds]="timeServ.secondsToWeekend()"></app-timer-component>
+<app-timer-component title="al prossimo mese" [seconds]="timeServ.secondsToEndOfTheMonth()"></app-timer-component>
+<app-timer-component title="al prossimo anno" [seconds]="timeServ.secondsToEndOfTheYear()"></app-timer-component>

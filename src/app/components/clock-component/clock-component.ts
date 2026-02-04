@@ -1,5 +1,5 @@
-import { Component, inject } from '@angular/core';
-import { TimeService } from '../../services/time-service';
+import { Component, input } from '@angular/core';
+
 
 @Component({
   selector: 'app-clock-component',
@@ -9,5 +9,5 @@ import { TimeService } from '../../services/time-service';
 })
 export class ClockComponent {
     
-  timeServ = inject(TimeService);
+  time = input<Date>()
 }
