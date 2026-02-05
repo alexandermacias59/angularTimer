@@ -1,9 +1,10 @@
 import { Component, computed, inject, input } from '@angular/core';
 import { TimeService } from '../../services/time-service';
+import { UpperCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-timer-component',
-  imports: [],
+  imports: [UpperCasePipe],
   templateUrl: './timer-component.html',
   styleUrl: './timer-component.scss',
 })

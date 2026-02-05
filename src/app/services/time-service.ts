@@ -13,6 +13,9 @@ export class TimeService {
     if (step === 1) return 'secondi';
     if (step === 60) return 'minuti';
     if (step === 3600) return 'ore';
+    if (step === 86400) return 'giorni';
+    if (step === 2592000) return 'mesi';
+    if (step === 31536000) return 'anni';
     return 'secondi';
   });
 

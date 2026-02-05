@@ -1,5 +1,8 @@
 <div class="controls-container">
     <button (click)="changeTimeStep(1)">Secondi</button>
     <button (click)="changeTimeStep(60)">Minuti</button>
-    <button (click)="changeTimeStep(3600)">Ore</button>
+    <button (click)="changeTimeStep(60 * 60)">Ore</button>
+    <button (click)="changeTimeStep(60 * 60 * 24)">Giorni</button>
+    <button (click)="changeTimeStep(60 * 60 * 24 * 30)">Mesi</button>
+    <button (click)="changeTimeStep(60 * 60 * 24 * 365)">Anni</button>
 </div>
