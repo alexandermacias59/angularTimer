@@ -1,10 +1,11 @@
 import { Component, computed, inject, input } from '@angular/core';
 import { TimeService } from '../../services/time-service';
 import { UpperCasePipe } from '@angular/common';
-
+import { BadWordsPipe } from '../../pipes/bad-words-pipe';
+import { BadWordsLocalPipe } from '../../pipes/bad-words-local-pipe';
 @Component({
   selector: 'app-timer-component',
-  imports: [UpperCasePipe],
+  imports: [UpperCasePipe, BadWordsPipe,BadWordsLocalPipe],
   templateUrl: './timer-component.html',
   styleUrl: './timer-component.scss',
 })
